@@ -1,5 +1,6 @@
 # HTML
 <details>
+  
 ### 1. Überschriften
 ```
 <h1>Überschrift 1</h1>
@@ -98,8 +99,10 @@ Markdown:
 </pre>
 </details>
 # CSS
+
 <details>
-  ## CSS-Grundlagen
+  
+## CSS-Grundlagen
 
 CSS (Cascading Style Sheets) ist eine Stylesheet-Sprache, die verwendet wird, um das Layout und das Aussehen von HTML-Dokumenten zu gestalten. Hier sind einige der grundlegenden Befehle:
 
