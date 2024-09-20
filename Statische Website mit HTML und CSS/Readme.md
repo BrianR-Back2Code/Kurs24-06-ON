@@ -1,5 +1,5 @@
-# HTML CSS
-
+# HTML
+<details>
 ### 1. Überschriften
 ```
 <h1>Überschrift 1</h1>
@@ -96,3 +96,109 @@ Markdown:
   Dies ist ein Code-Block.
 </code>
 </pre>
+</details>
+# CSS
+<details>
+  ## CSS-Grundlagen
+
+CSS (Cascading Style Sheets) ist eine Stylesheet-Sprache, die verwendet wird, um das Layout und das Aussehen von HTML-Dokumenten zu gestalten. Hier sind einige der grundlegenden Befehle:
+
+### 1. **Selektoren**
+
+- **Elementselektor**: Stile für bestimmte HTML-Elemente.
+  ```css
+  p {
+    color: blue;
+  }
+  ```
+- **Klassenselektor**: Stile für Elemente mit einer bestimmten Klasse.
+  ```css
+  .my-class {
+    background-color: yellow;
+  }
+  ```
+- **ID-Selektor**: Stile für ein Element mit einer bestimmten ID.
+  ```css
+  #my-id {
+    font-size: 20px;
+  }
+  ```
+
+### 2. **Text-Formatierung**
+
+- **Farbe festlegen**:
+  ```css
+  color: red;
+  ```
+
+- **Schriftgröße ändern**:
+  ```css
+  font-size: 16px;
+  ```
+
+- **Schriftart setzen**:
+  ```css
+  font-family: 'Arial', sans-serif;
+  ```
+
+### 3. **Box-Modell**
+
+- **Padding** (Innenabstand):
+  ```css
+  padding: 10px;
+  ```
+
+- **Margin** (Außenabstand):
+  ```css
+  margin: 20px;
+  ```
+
+- **Rahmen (Border)**:
+  ```css
+  border: 2px solid black;
+  ```
+
+### 4. **Hintergrund**
+
+- **Hintergrundfarbe**:
+  ```css
+  background-color: lightgrey;
+  ```
+
+- **Hintergrundbild**:
+  ```css
+  background-image: url('image.jpg');
+  ```
+
+### 5. **Layout**
+
+- **Breite und Höhe**:
+  ```css
+  width: 100px;
+  height: 200px;
+  ```
+
+- **Flexbox**:
+  ```css
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ```
+
+### 6. **Pseudo-Klassen**
+
+- **Hover-Effekt**:
+  ```css
+  a:hover {
+    color: green;
+  }
+  ```
+
+- **Erstes Kind**:
+  ```css
+  li:first-child {
+    font-weight: bold;
+  }
+  ```
+
+</details>
