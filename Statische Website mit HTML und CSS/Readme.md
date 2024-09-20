@@ -1,5 +1,5 @@
 # HTML
-<details>
+<Mehr Info>
   
 ### 1. Überschriften
 ```
@@ -97,7 +97,7 @@ Markdown:
   Dies ist ein Code-Block.
 </code>
 </pre>
-</details>
+</Mehr Info>
 
 # CSS
 
