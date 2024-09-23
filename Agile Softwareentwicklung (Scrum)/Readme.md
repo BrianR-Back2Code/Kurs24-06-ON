@@ -4,6 +4,8 @@
 
 # File Uploads (Learning Material)
 
+[Agilemanifesto](https://agilemanifesto.org/iso/de/manifesto.html)
+
 ### 1. Projektmanagement.pdf
 
 - Enthält eine kurze Übersicht und Erklärung zu allen gängigen klassischen und agilen Methoden in der Softwarentwicklung
