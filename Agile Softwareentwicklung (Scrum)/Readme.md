@@ -7,4 +7,6 @@
   - Scrum Master (PSM1) bezieht sich zum großteil auf das Scrum Guide.
   - ACHTUNG!!! Aktuelle Scrum Guide Version ist von November 2020. Ältere Versionen sind nicht zum lernen geeignet.
 ### 3. Scrum Guide US
-  - Hier gelten die selben Punkte wie oben. 
+  - Hier gelten die selben Punkte wie oben.
+### 4. Scrum-Framework
+  - Scrum-Framework zur Verdeutlichung von Scrum als PNG Datei
