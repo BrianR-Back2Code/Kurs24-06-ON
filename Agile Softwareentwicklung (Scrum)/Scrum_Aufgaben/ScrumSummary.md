@@ -105,10 +105,6 @@
 
 ---
 
-Gerne! Hier ist das Scrum-Artefakte-Thema im **Details & Summary**-Format strukturiert:
-
----
-
 ### **Scrum-Artefakte**
 
 <details>
