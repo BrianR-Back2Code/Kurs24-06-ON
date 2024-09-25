@@ -104,3 +104,130 @@
 - **Definition of Done**: Klare Kriterien, wann ein Product Backlog Eintrag als abgeschlossen gilt. Dies ist entscheidend, um Missverständnisse zu vermeiden und den Fokus auf Qualität zu legen.
 
 ---
+
+Gerne! Hier ist das Scrum-Artefakte-Thema im **Details & Summary**-Format strukturiert:
+
+---
+
+### **Scrum-Artefakte**
+
+<details>
+<summary> Information </summary>
+
+- **Definition**: Repräsentieren Arbeit oder Wert und maximieren Transparenz, um den Fortschritt nachvollziehbar zu machen.
+- **Commitments**:
+  - **Product Backlog** → **Produkt-Ziel**.
+  - **Sprint Backlog** → **Sprint-Ziel**.
+  - **Increment** → **Definition of Done**.
+- **Ziel**: Stärkung der **Empirie** (Transparenz, Inspektion und Adaption) und der **Scrum-Werte**.
+
+</details>
+
+---
+
+### **Product Backlog**
+
+<details>
+<summary> Information </summary>
+
+- **Definition**: Eine geordnete Liste von Elementen, die zur Verbesserung des Produkts notwendig sind.
+- **Einzige Quelle der Arbeit** für das Scrum Team.
+- **Refinement**: Einträge werden kontinuierlich in kleinere und präzisere Elemente zerlegt.
+- **Verantwortung**: Developer schätzen die Größe der Einträge, der **Product Owner** hilft bei der Klarstellung.
+- **Ziel**: Transparente und präzise Einträge, die als „bereit“ für den Sprint gelten.
+
+</details>
+
+**Wichtig für die Prüfung**:
+
+- Nur **refinierte Einträge** werden im Sprint Planning ausgewählt.
+- Der **Product Owner** priorisiert und unterstützt das Team bei der Auswahl und Klärung der Einträge.
+
+---
+
+### **Commitment: Produkt-Ziel**
+
+<details>
+<summary> Information </summary>
+
+- **Definition**: Langfristiges Ziel des Scrum Teams, welches die Richtung für die Produktentwicklung vorgibt.
+- **Ort**: Das **Produkt-Ziel** ist Teil des **Product Backlogs**.
+- **Ziel**: Das Scrum Team muss dieses Ziel erfüllen oder aufgeben, bevor es ein neues Produkt-Ziel annimmt.
+
+</details>
+
+**Wichtig für die Prüfung**:
+
+- Das **Produkt-Ziel** bietet dem Team langfristige Orientierung und Fokus für die Planung.
+
+---
+
+### **Sprint Backlog**
+
+<details>
+<summary> Information </summary>
+
+- **Definition**: Eine Sammlung von:
+  1. **Sprint-Ziel** (Wofür?).
+  2. **Ausgewählten Backlog-Einträgen** (Was?).
+  3. **Umsetzbarem Plan** zur Lieferung des Increments (Wie?).
+- **Verantwortung**: Das Sprint Backlog wird von den Developern erstellt und kontinuierlich aktualisiert.
+- **Ziel**: Ein Echtzeitbild der aktuellen Sprint-Arbeit und Fortschritt.
+
+</details>
+
+**Wichtig für die Prüfung**:
+
+- Enthält genug Details, damit der Fortschritt im **Daily Scrum** überprüft werden kann.
+- Entwickelt sich während des Sprints, wenn neue Erkenntnisse entstehen.
+
+---
+
+### **Commitment: Sprint-Ziel**
+
+<details>
+<summary> Information </summary>
+
+- **Definition**: Die einzige Zielsetzung für den Sprint, die Flexibilität bei der Umsetzung bietet.
+- **Ort**: Das **Sprint-Ziel** wird im **Sprint Planning** festgelegt und dem **Sprint Backlog** hinzugefügt.
+- **Ziel**: Es schafft Kohärenz und Fokus, damit das Scrum Team auf ein gemeinsames Ziel hinarbeitet.
+
+</details>
+
+**Wichtig für die Prüfung**:
+
+- Entwickelt wird das **Sprint-Ziel** während des **Sprint Plannings** und bleibt bis zum Sprint-Ende unverändert.
+
+---
+
+### **Increment**
+
+<details>
+<summary> Information </summary>
+
+- **Definition**: Ein nutzbares Ergebnis, das einen Fortschritt zum **Produkt-Ziel** darstellt.
+- **Eigenschaften**: Jedes Increment baut auf den vorherigen auf, und sie müssen zusammenarbeiten.
+- **Verwendung**: Ein Increment kann während des Sprints geliefert werden, unabhängig vom Sprint Review.
+
+</details>
+
+**Wichtig für die Prüfung**:
+
+- Arbeit kann nur als Increment betrachtet werden, wenn sie den Anforderungen der **Definition of Done** entspricht.
+
+---
+
+### **Commitment: Definition of Done**
+
+<details>
+<summary> Information </summary>
+
+- **Definition**: Formale Beschreibung des Zustands, den ein Increment erreichen muss, um als „fertig“ betrachtet zu werden.
+- **Ziel**: Sicherzustellen, dass alle Teammitglieder das gleiche Verständnis von „fertig“ haben.
+- **Verantwortung**: Die Developer müssen sicherstellen, dass alle Arbeiten die **Definition of Done** erfüllen.
+
+</details>
+
+**Wichtig für die Prüfung**:
+
+- Ein Product Backlog Eintrag kann weder veröffentlicht noch im **Sprint Review** präsentiert werden, wenn er die **Definition of Done** nicht erfüllt.
