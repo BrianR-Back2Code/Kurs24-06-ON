@@ -1,0 +1,77 @@
+body {
+  background-color: #e6f7ff; /* Ein helles Blau als Grundfarbe */
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+  padding: 0;
+}
+h1 {
+  color: #ff4500; /* Kräftiges Orange für die Überschrift */
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 20px auto;
+  width: 20%;
+  height: auto;
+  border: 3px solid #ff4500; /* Rahmen um das Bild */
+  border-radius: 10px;
+}
+div {
+  background-color: #ffcccb; /* Helles Rot für den Hintergrund */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.container1 {
+  text-align: center;
+  background-color: brown;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container1:hover {
+  background-color: rgb(255, 0, 43);
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: #e6f7ff;
+}
+
+#item1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+#item1:hover {
+  font-size: 2em;
+  transition: 0.3s ease-in-out;
+}
+
+#item3 {
+  color: aqua;
+}
+
+#item4 {
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
