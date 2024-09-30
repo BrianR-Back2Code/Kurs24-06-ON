@@ -1,13 +1,29 @@
 body {
-  background-color: #e6f7ff; /* Ein helles Blau als Grundfarbe */
+  background-color: #460101; /* Ein helles Blau als Grundfarbe */
   font-family: Arial, sans-serif;
   margin: 0;
 
   padding: 0;
 }
+
+#item5 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#item5:hover {
+  color: blueviolet;
+  transition: color 0.3s ease-in-out;
+}
+
 h1 {
   color: #ff4500; /* Kräftiges Orange für die Überschrift */
   text-align: center;
+}
+
+h1:hover {
+  color: blueviolet;
+  transition: color 0.3s ease-in-out;
 }
 p {
   font-size: 18px;
@@ -48,12 +64,13 @@ li {
 
 #item1 {
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2em;
   font-weight: bolder;
 }
 
 #item1:hover {
-  font-size: 2em;
-  transition: 0.3s ease-in-out;
+  font-size: 4em;
+  transition: 1s ease-in-out;
 }
 
 #item3 {
