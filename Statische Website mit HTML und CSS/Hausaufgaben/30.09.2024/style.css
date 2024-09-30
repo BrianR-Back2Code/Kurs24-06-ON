@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Hintergrundfarbe der Webseite */
+  color: #333; /* Standardtextfarbe */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Nutzt die Hälfte der Ansichtshöhe für den Header */
+  overflow: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Deckt den gesamten Container ab */
+  display: block;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Weißer Text für besseren Kontrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Schattierung für Lesbarkeit */
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Zentriert die Elemente horizontal */
+  gap: 2em; /* Abstand zwischen den Elementen */
+  padding: 2em 1em; /* Abstand um die Menü-Elemente */
+}
+
+.item {
+  flex: 1 1 calc(33.33% - 2em); /* Basisbreite von 33.33%, mit Abzug für den Abstand */
+  box-sizing: border-box; /* Bezieht Padding und Rand in die Breite mit ein */
+  padding: 2em;
+  background-color: #333; /* Hintergrundfarbe der Boxen */
+  color: #fff; /* Textfarbe */
+  text-align: center;
+  transition: transform 0.2s; /* Weiche Übergänge für Effekte */
+  cursor: pointer;
+  border-radius: 10px; /* Runde Ecken */
+}
+
+.item:hover {
+  transform: scale(1.05); /* Vergrößert die Box leicht beim Hover */
+  background-color: #444; /* Ändert die Hintergrundfarbe beim Hover */
+}
+
+.button {
+  text-decoration: none;
+  color: inherit; /* Erbt die Textfarbe */
+  font-size: 20px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 2px solid #fff; /* Rahmen der Buttons */
+  border-radius: 5px; /* Runde Ecken der Buttons */
+  transition: background-color 0.2s, color 0.2s; /* Weicher Übergang */
+}
+
+.button:hover {
+  background-color: #fff; /* Hintergrundfarbe beim Hover */
+  color: #333; /* Textfarbe beim Hover */
+}
+
+.footer {
+  background-color: #222; /* Hintergrundfarbe des Footers */
+  color: #fff; /* Textfarbe */
+  text-align: center;
+  padding: 1em 0;
+}
+
+@media (max-width: 1200px) {
+  .item {
+    flex: 1 1 calc(50% - 2em); /* Basisbreite von 50% bei mittelgroßen Bildschirmen */
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex: 1 1 calc(100% - 2em); /* Basisbreite von 100% bei kleinen Bildschirmen */
+    padding: 1em; /* Reduziertes Padding bei kleinen Bildschirmen */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 14px; /* Kleinere Schriftgröße im Footer bei kleinen Bildschirmen */
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.image-row img {
+  width: 45%;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
