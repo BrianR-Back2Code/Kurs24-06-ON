@@ -129,3 +129,16 @@ h2 {
 p {
   text-align: center;
 }
+li {
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  color: #22b9ff;
+}
+.flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
