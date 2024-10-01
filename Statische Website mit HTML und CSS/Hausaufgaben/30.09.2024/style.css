@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 50%; /* Hält den Header auf 50% der Höhe des Fensters */
   overflow: hidden;
-  z-index: 1000;
+  /*z-index: 1000; */
   background-color: #fff;
 }
 
@@ -191,11 +191,6 @@ li {
 
 .album:hover {
   transform: scale(1.05);
-}
-
-.texttest {
-  font-size: 20px;
-  font-weight: bolder;
 }
 
 .biography-section {
