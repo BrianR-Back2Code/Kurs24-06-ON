@@ -1,10 +1,11 @@
+html,
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Hintergrundfarbe der Webseite */
-  color: #333; /* Standardtextfarbe */
+  height: 100%; /* HTML und Body auf volle Höhe setzen */
+  margin: 0; /* Entfernt den Standardabstand */
+  display: flex;
+  flex-direction: column;
+  background-color: #1c2d48;
 }
-
 .header {
   position: relative;
   width: 100%;
@@ -48,7 +49,7 @@ h1 {
 .item {
   flex: 1 1 calc(33.33% - 2em); /* Basisbreite von 33.33%, mit Abzug für den Abstand */
   box-sizing: border-box; /* Bezieht Padding und Rand in die Breite mit ein */
-  padding: 2em;
+  padding: 1em 0.5em 1em 0.5em;
   background-color: #333; /* Hintergrundfarbe der Boxen */
   color: #fff; /* Textfarbe */
   text-align: center;
@@ -63,26 +64,36 @@ h1 {
 }
 
 .button {
+  flex: 1 1 calc(33.33% - 2em); /* Basisbreite von 33.33%, mit Abzug für den Abstand */
+  box-sizing: border-box; /* Bezieht Padding und Rand in die Breite mit ein */
+  padding: 1em 0.5em 1em 0.5em;
+  text-align: center;
+  color: #fff; /* Textfarbe */
+  border-radius: 2em;
   text-decoration: none;
+  font-weight: bolder;
   color: inherit; /* Erbt die Textfarbe */
-  font-size: 20px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
-  padding: 0.5em 1em;
-  border: 2px solid #fff; /* Rahmen der Buttons */
-  border-radius: 5px; /* Runde Ecken der Buttons */
+  padding: 1.5em 0.5em 1.5em 0.5em;
   transition: background-color 0.2s, color 0.2s; /* Weicher Übergang */
+  background-image: linear-gradient(180deg, #495971, #45669a);
 }
 
 .button:hover {
-  background-color: #fff; /* Hintergrundfarbe beim Hover */
+  transition: background-color 0.2s, color 0.2s; /* Weicher Übergang */
   color: #333; /* Textfarbe beim Hover */
+  background-image: linear-gradient(180deg, #6582ac, #2d65b9);
 }
 
 .footer {
-  background-color: #222; /* Hintergrundfarbe des Footers */
+  background-color: #1c2d48;
   color: #fff; /* Textfarbe */
   text-align: center;
   padding: 1em 0;
+  width: 100%;
+  margin-top: auto; /* Footer wird an den unteren Rand verschoben */
 }
 
 @media (max-width: 1200px) {
