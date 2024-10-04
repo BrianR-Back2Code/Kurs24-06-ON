@@ -111,6 +111,43 @@ header {
   transform: scale(1.05); /* Bild leicht vergrößern beim Hover */
 }
 
+@media (max-width: 768px) {
+  .galerie {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Kleinere Spaltenbreite für mobile Geräte */
+    gap: 1rem; /* Geringerer Abstand zwischen den Bildern */
+  }
+
+  .bild {
+    border-radius: 8px; /* Leicht angepasste Rundung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kleinere Schatten auf mobilen Geräten */
+  }
+
+  .buy-button {
+    width: 50%; /* Breitere Button auf kleineren Geräten */
+  }
+}
+
+@media (max-width: 480px) {
+  .galerie {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); /* Noch kleinere Spaltenbreite für sehr kleine Bildschirme */
+    gap: 0.5rem; /* Geringerer Abstand zwischen den Bildern */
+  }
+
+  .buy-button {
+    width: 80%; /* Noch breiterer Button auf sehr kleinen Geräten */
+  }
+
+  .produkt-details {
+    flex-direction: column; /* Produktdetails untereinander anzeigen auf sehr kleinen Bildschirmen */
+  }
+}
+
 /* Footer */
 
 footer {
