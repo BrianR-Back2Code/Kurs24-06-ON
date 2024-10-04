@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%; /* HTML und Body auf volle Höhe setzen */
+  margin: 0; /* Entfernt den Standardabstand */
+}
+
+header {
+  background-color: rgb(56, 56, 56);
+  padding: 20px;
+  text-align: center;
+}
+
+.navheader {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.whole {
+  padding: 2em;
+}
+
+/*Produkt */
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap; /* Flexbox für flexible Anordnung */
+  gap: 1rem; /* Abstand zwischen den Details */
+  justify-content: space-between;
+  max-width: 800px; /* Maximale Breite des Containers */
+  margin: 2rem auto; /* Zentriert den Container */
+}
+
+.detail-item {
+  flex: 1 1 30%; /* Breite von 30% pro Detail, um drei Details in einer Reihe anzuzeigen */
+  background-color: #7e7e7e; /* Grauer Hintergrund für jedes Detail */
+  padding: 1rem; /* Innenabstand für den Inhalt */
+  border-radius: 8px; /* Runde Ecken */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für einen 3D-Effekt */
+  text-align: left; /* Links ausgerichteter Text */
+  margin-bottom: 1em;
+}
+
+.detail-item p {
+  margin: 0;
+  color: #030303; /* Dunkler Text für Kontrast */
+  font-size: 1rem;
+}
+
+/* Preis */
+
+.preis {
+  color: orange;
+  font-size: 2rem;
+  text-align: center; /* Preis zentrieren */
+}
+
+/*Kauf Button*/
+
+.buy-button-container {
+  width: 100%; /* Container füllt die gesamte Breite */
+  display: flex;
+  justify-content: center; /* Button wird horizontal zentriert */
+  margin-top: 2rem;
+}
+
+.buy-button {
+  background-color: #ff8400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 30%; /* Größe des Buttons */
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #0056b3; /* Dunkleres Blau beim Hover */
+}
+
+/* Bildergalerie */
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.bild {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.bild img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.bild:hover img {
+  transform: scale(1.05); /* Bild leicht vergrößern beim Hover */
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(56, 56, 56);
+  padding: 20px;
+  text-align: center;
+}
+
+.footerhead {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.foot-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-nav li {
+  margin: 0 5px;
+  color: rgb(255, 255, 255);
+}
+
+.foot-nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.foot-nav a:hover {
+  text-decoration: underline;
+}
