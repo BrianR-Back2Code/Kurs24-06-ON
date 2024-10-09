@@ -10,21 +10,21 @@
 
 body {
   color: black;
-  background-color: white;
+  background-color: #1e1e24;
   margin: 0;
   padding: 0;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
+::-webkit-scrollbar {
+  width: 0rem;
 }
 
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
+::-webkit-scrollbar-track {
+  background: #4e4eb6;
 }
 
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+::-webkit-scrollbar-thumb {
+  background: #4e4eb6;
 }
 
 main {
@@ -167,7 +167,7 @@ main {
   }
 
   .navbar:hover .logo svg {
-    margin-left: 11rem;
+    margin-left: 13rem;
   }
 
   .navbar:hover .logo-text {
@@ -210,4 +210,61 @@ main {
 
 .solar #solarIcon {
   display: block;
+}
+
+.ha1 {
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  font: 2em Georgia, serif;
+}
+
+.shadow {
+  padding: 20px; /* Innenabstand */
+  margin: 20px auto; /* Außenabstand oben/unten und zentriert links/rechts */
+  max-width: 700px; /* Maximale Breite der Box */
+  width: 100%; /* Box füllt 100% der Breite ihres Containers */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
+  border-radius: 10px; /* Abgerundete Ecken */
+}
+
+.shadow:hover {
+  box-shadow: 0 4px 8px rgba(122, 29, 29, 0.2); /* Schatten */
+}
+/* Grid */
+
+.parent {
+  padding: 5em;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+}
+
+.beschreibung {
+  padding: 0em 6em;
+}
+
+.pretext {
+  padding-top: 2em;
+}
+
+summary {
+  list-style-type: "♥ ";
+}
+
+details[open] > summary {
+  list-style-type: ":) ";
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
 }
