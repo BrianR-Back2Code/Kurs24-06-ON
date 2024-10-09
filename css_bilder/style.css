@@ -243,7 +243,17 @@ main {
   grid-row-gap: 2em;
 }
 
+/*-----------------------*/
+
+.projects {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
 .beschreibung {
+  color: white;
   padding: 0em 6em;
 }
 
@@ -252,11 +262,12 @@ main {
 }
 
 summary {
-  list-style-type: "♥ ";
+  color: white;
+  list-style-type: " ♥ ";
 }
 
 details[open] > summary {
-  list-style-type: ":) ";
+  list-style-type: " :) ";
 }
 
 .div1 {
