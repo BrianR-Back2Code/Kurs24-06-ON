@@ -226,10 +226,11 @@ main {
   width: 100%; /* Box füllt 100% der Breite ihres Containers */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
   border-radius: 10px; /* Abgerundete Ecken */
+  transition: 500ms ease-in;
 }
 
 .shadow:hover {
-  box-shadow: 0 4px 8px rgba(122, 29, 29, 0.2); /* Schatten */
+  box-shadow: 0 4px 8px #4e4eb6; /* Schatten */
 }
 /* Grid */
 
@@ -250,6 +251,16 @@ main {
   font-weight: bold;
   color: white;
   text-decoration: none;
+  transition: 600ms ease-out;
+}
+
+.project_picture {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.projects:hover {
+  color: #4e4eb6;
 }
 
 .beschreibung {
