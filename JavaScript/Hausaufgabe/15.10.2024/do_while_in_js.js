@@ -34,7 +34,7 @@ function array_of_num() {
   let count = 0; // Zähler oder für was auch immer
   for (i = 0; i <= str.length; i++) {
     // Number wandelt den String in einer zahl um und charAt gibt mir den Inhalt der sich an Stelle i befindet aus.
-    // dies bezweckt das ich mit dem element arbeiten kann in dem fall mit der nächsten zahl multiplizieren.
+    // dies bezweckt das ich mit dem element arbeiten kann in dem fall mit der nächsten zahl addieren.
     //Index:     1 2 3
     //String :   2 4 8
     //
