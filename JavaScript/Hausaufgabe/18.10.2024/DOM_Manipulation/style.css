@@ -1,0 +1,12 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: 500ms ease-in;
+}
+
+.boxxie {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
