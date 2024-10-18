@@ -143,4 +143,29 @@ Tipp: Verwende insertBefore() . */
     const first_item = document.getElementsByTagName("li")[0];
     list.insertBefore(newItem, first_item);
   };
+
+  /* Aufgabe 10: Mini-Game: Zufällige Zahlen vergleichen
+
+Ziel: Programmieren mit Logik und DOM-Manipulation kombinieren.
+Aufgabe: Erstelle ein Spiel, bei dem der Benutzer eine Zahl zwischen 1 und 10 in
+ein Eingabefeld eingibt und auf "Überprüfen" klickt. Das Programm generiert eine
+zufällige Zahl zwischen 1 und 10 und zeigt an, ob der Benutzer richtig geraten hat
+oder nicht. Verwende ein <p> -Element, um das Ergebnis anzuzeigen.
+Tipp: Verwende Math.random() , getElementById() und textContent . */
+
+  document.getElementById("numbercheck").onclick = function () {
+    let guess = parseInt(document.getElementById("guess").value);
+    if (guess > 11 || guess < 1) {
+      alert("Bitte Korrekte Zahl zwischen 1 und 10 eingben");
+    } else {
+      let randomnumber = Math.floor(Math.random() * 10) + 1;
+      if (randomnumber === guess) {
+        document.getElementById("result").textContent =
+          "Richtig! Die Zahl war " + randomnumber;
+      } else {
+        document.getElementById("result").textContent =
+          "Falsch! Die Zahl war " + randomnumber;
+      }
+    }
+  };
 });
