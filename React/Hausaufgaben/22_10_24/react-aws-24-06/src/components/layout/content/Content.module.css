@@ -1,0 +1,11 @@
+.newcontent {
+  text-align: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 200ms ease-in-out;
+}
+
+.newcontent:hover {
+  color: black;
+}
