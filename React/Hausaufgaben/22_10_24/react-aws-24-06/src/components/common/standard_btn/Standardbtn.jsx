@@ -1,8 +1,8 @@
 import styles from "./Standardbtn.module.css";
 
-function Standardbtn({ title, className }) {
+function Standardbtn({ title, className, msg }) {
   return (
-    <button onClick={() => alert("Hallo von Home")} className={className}>
+    <button onClick={() => alert({ msg })} className={className}>
       {title}
     </button>
   );

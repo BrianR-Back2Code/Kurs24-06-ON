@@ -1,0 +1,14 @@
+.textbox {
+  width: 50%;
+  padding: 6px, 10px;
+  margin: 10px 0;
+
+  box-sizing: border-box;
+  display: block;
+}
+
+.sendbtn {
+  position: relative;
+  background-color: aqua;
+  bottom: 0.4em;
+}
