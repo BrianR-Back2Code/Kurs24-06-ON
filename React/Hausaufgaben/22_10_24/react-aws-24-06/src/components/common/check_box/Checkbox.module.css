@@ -1,0 +1,25 @@
+.check {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Damit die Items untereinander stehen */
+  justify-content: center; /* Vertikale Zentrierung */
+  align-items: center; /* Horizontale Zentrierung */
+}
+
+.submit_btn {
+  border: 0px;
+  padding: 0.5em;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transition: 500ms ease-in-out;
+  margin-top: 10px; /* Optional: Abstand zum oberen Element */
+}
+
+.submit_btn:hover {
+  color: aquamarine;
+  background-color: black;
+}

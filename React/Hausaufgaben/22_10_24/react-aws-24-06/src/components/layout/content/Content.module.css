@@ -4,6 +4,7 @@
   font-weight: bold;
   font-size: 40px;
   transition: 200ms ease-in-out;
+  flex: 1;
 }
 
 .newcontent:hover {

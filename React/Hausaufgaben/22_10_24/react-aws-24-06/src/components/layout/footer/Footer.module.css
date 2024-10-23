@@ -1,5 +1,7 @@
 .feet {
+  position: relative;
   text-align: center;
   font-weight: bold;
   color: brown;
+  background-color: aqua;
 }
