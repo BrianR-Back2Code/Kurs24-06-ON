@@ -1,0 +1,35 @@
+.footer-bar {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #993333;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+}
+
+.footer-links li {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.footer-links a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #f39c12;
+}
