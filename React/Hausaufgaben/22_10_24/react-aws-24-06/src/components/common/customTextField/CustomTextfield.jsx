@@ -8,9 +8,7 @@ Die Komponente soll schließlich auf eurer Webseite eingebunden werden
 name = name des Labels
 */
 function MyForm({ name }) {
-  const [title, settitle] = useState(
-    "Bitte hier Text eintragen , wurde zum testen befüllt und ist eigl. leer"
-  );
+  const [title, settitle] = useState(" ");
   return (
     <div className={styles.textbox}>
       <label>

@@ -1,13 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/layout/navbar/Navbar";
-import Content from "./components/layout/content/Content";
-import Footer from "./components/layout/footer/Footer";
+import Content from "./components/common/layout/content/Content";
+import Footer from "./components/common/layout/footer/Footer";
+import MyNavbar from "./components/common/layout/navbar/Navbar";
 
 function App() {
   return (
     <div className="main-container">
-      <Navbar />
+      <MyNavbar />
       <Content />
       <Footer />
     </div>

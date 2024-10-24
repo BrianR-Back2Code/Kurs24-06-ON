@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css";
 
-function Navbar() {
+function MyNavbar() {
   return (
     <div className={styles.navbar}>
       <button
@@ -13,4 +13,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default MyNavbar;
