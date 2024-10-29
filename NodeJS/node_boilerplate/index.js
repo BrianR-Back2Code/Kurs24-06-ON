@@ -14,7 +14,6 @@ function checkUser(params) {
   }
 
   someusedVariable = "Test";
-  someusedVariable = "Test";
 
   return;
 }
