@@ -21,10 +21,10 @@ function writefile() {
   });
 }
 
-function editfile(params) {
+function editfile() {
   try {
     const data = fs.readFileSync("beispiel.txt", "utf8");
-    const newText = "Ich rauche Crack";
+    const newText = "Hallo ich bin der Neue Inhalt";
     const modifiedData = data.replace(data, newText);
     fs.writeFileSync("beispiel.txt", modifiedData, "utf8");
     console.log("Datei erfolgreich bearbeitet");
