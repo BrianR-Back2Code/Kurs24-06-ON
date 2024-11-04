@@ -104,9 +104,7 @@ async function main() {
       showCatFact();
     } else {
       console.log(
-        chalk.yellow(
-          "Danke, dass du das Programm genutzt " + username + " hast!"
-        )
+        chalk.yellow(`Danke , ${username} das du dieses Programm genutzt hast.`)
       );
       break;
     }
