@@ -6,7 +6,7 @@ const server = express();
 const PORT = 4000;
 
 server.use(cors());
-server.use(express.json()); // JSON-Parsing-Middleware hinzufügen
+server.use(express.json());
 
 const todosFilePath = "./todos.json";
 
