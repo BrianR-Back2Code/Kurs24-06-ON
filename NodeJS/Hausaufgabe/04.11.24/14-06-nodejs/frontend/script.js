@@ -7,10 +7,11 @@ function getTodos() {
 function loadTodos(todos) {
   console.log(todos);
 
-  for (let i = 0; i < todos.length; i++) {
-    // console.log(todos[i].title);
-    taskToHtml(todos[i]);
-  }
+  document.getElementById("task-list").innerHTML = ""; // Liste leeren
+
+  todos.forEach((todo) => {
+    taskToHtml(todo);
+  });
 }
 
 function taskToHtml(todo) {
@@ -26,11 +27,7 @@ function taskToHtml(todo) {
   // checkbox erzeugen
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
-  if (taskCompleted === true) {
-    checkbox.checked = true;
-  } else {
-    checkbox.checked = false;
-  }
+  checkbox.checked = taskCompleted;
 
   // Todo text
   let taskText = document.createElement("span");
@@ -40,6 +37,11 @@ function taskToHtml(todo) {
   let delButton = document.createElement("button");
   delButton.textContent = "Delete Task";
 
+  // Click-Event für den Delete-Button
+  delButton.addEventListener("click", function () {
+    deleteTask(todo.id);
+  });
+
   // listenelement ergänzen
   listItem.appendChild(checkbox);
   listItem.appendChild(taskText);
@@ -47,6 +49,18 @@ function taskToHtml(todo) {
 
   // listenelement in die html liste hinzufügen
   document.getElementById("task-list").appendChild(listItem);
+}
+
+function deleteTask(id) {
+  fetch(`http://127.0.0.1:4000/todos?id=${id}`, { method: "DELETE" })
+    .then((response) => {
+      if (response.ok) {
+        document.getElementById(id).remove(); // Entfernt das Element aus der HTML-Liste
+      } else {
+        console.error("Fehler beim Löschen des To-Dos");
+      }
+    })
+    .catch((error) => console.error("Netzwerkfehler:", error));
 }
 
 function addTask() {

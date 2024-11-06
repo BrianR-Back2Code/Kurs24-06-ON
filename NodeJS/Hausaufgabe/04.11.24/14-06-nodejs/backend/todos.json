@@ -1,20 +1,8 @@
 [
   {
-    "title": "test",
+    "title": "Neuer Titel",
     "completed": false,
-    "id": 1,
-    "userId": 1
-  },
-  {
-    "title": "Milch holen",
-    "completed": false,
-    "id": 2,
-    "userId": 2
-  },
-  {
-    "title": "Crack rauchen",
-    "completed": false,
-    "id": 3,
-    "userId": 3
+    "userId": 1,
+    "id": 1
   }
 ]

@@ -49,6 +49,38 @@ const getNextUserId = (todos) => {
   return Math.max(...userIds) + 1;
 };
 
+// 1. Füge in index.js einen neuen GET-Endpunkt /todos/byname hinzu.
+// 2. Verwende einen Query-Parameter name , um nach dem Namen des Todos zu
+// filtern.
+// 3. Falls kein Todo mit dem Namen gefunden wird, soll der Server eine leere Liste
+// zurückgeben.
+
+// server.get("/todos/bytitle/:title", (req, res) => {
+//   const todotitle = req.params.title;
+//   const todos = readTodosFromFile();
+//   const todo = todos.find((item) => item.title === todotitle);
+
+//   if (todo) {
+//     res.json(todo);
+//   } else {
+//     res.status(404).send("To-Do mit diesem Titel wurde nicht gefunden.");
+//   }
+// });
+
+// Query
+
+server.get("/todos/bytitle", (req, res) => {
+  const todotitle = req.query.title; // Query-Parameter 'title' auslesen
+  const todos = readTodosFromFile();
+  const todo = todos.find((item) => item.title === todotitle);
+
+  if (todo) {
+    res.json(todo);
+  } else {
+    res.status(404).send("To-Do mit diesem Titel wurde nicht gefunden.");
+  }
+});
+
 // Route zum Abrufen aller To-Dos
 server.get("/todos", (req, res) => {
   const todos = readTodosFromFile();
@@ -96,6 +128,51 @@ server.post("/todos", (req, res) => {
   writeTodosToFile(todos);
 
   res.status(201).json(newTodo);
+});
+
+// 1. Füge eine PUT-Route hinzu, die den Namen eines bestehenden Todos aktualisiert.
+// 2. Verwende todoId als Query-Parameter und name im Body.
+// 3. Wenn das Todo nicht existiert, soll die Antwort "Todo not found" sein.
+
+server.put("/todos/update", (req, res) => {
+  const todoId = parseInt(req.query.id);
+  const todoName = req.query.title;
+  const todos = readTodosFromFile();
+  if (!todoId) {
+    res.status(404).send("ID zum updaten fehlt");
+  }
+  const todo = todos.find((item) => item.id === todoId);
+  if (!todo) {
+    return res.status(404).send("To-Do mit dieser ID nicht gefunden");
+  }
+
+  if (todoName) {
+    todo.title = todoName;
+  }
+  writeTodosToFile(todos);
+  res
+    .status(200)
+    .json({ message: "To-Do erfolgreich aktualisiert", updatedTodo: todo });
+});
+
+// Löschen des todos
+server.delete("/todos", (req, res) => {
+  const todoId = parseInt(req.query.id); // Query-Parameter 'id' auslesen und in Zahl konvertieren
+
+  if (!todoId) {
+    return res.status(400).send("Es wurde keine gültige To-Do-ID angegeben.");
+  }
+
+  let todos = readTodosFromFile();
+  const initialLength = todos.length;
+  todos = todos.filter((item) => item.id !== todoId); // Entfernt das To-Do mit der angegebenen ID
+
+  if (todos.length === initialLength) {
+    return res.status(404).send("To-Do mit dieser ID wurde nicht gefunden.");
+  }
+
+  writeTodosToFile(todos); // Aktualisiert die Datei
+  res.status(200).send(`To-Do mit ID ${todoId} wurde gelöscht.`);
 });
 
 server.listen(PORT, () => {
