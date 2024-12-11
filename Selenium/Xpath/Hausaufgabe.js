@@ -45,11 +45,27 @@ const { Builder, By } = require("selenium-webdriver");
     await driver.get("https://seleniumbase.io/demo_page");
     console.log("Aufgabe 3: Textfeld auswählen");
     const textField = await driver.findElement(
-      By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")
+      By.xpath('//*[@id="myTextInput"]')
     ); // Ergänze den XPath
     const myText = "Automatisierter Text";
     await textField.sendKeys(myText);
     console.log(`${myText}`);
+  } finally {
+    await driver.quit();
+  }
+})();
+
+// Aufgabe 4 wurde vergessen aber nachgetragen gerne bei der Kontrolle ignorieren
+
+(async function clickButton() {
+  let driver = await new Builder().forBrowser("firefox").build();
+  try {
+    await driver.get("https://seleniumbase.io/demo_page");
+    console.log("Aufgabe 4: Button klicken");
+    const button = await driver.findElement(By.xpath('//*[@id="myButton"]')
+  ); // Ergänze den XPath
+    await button.click();
+    console.log("Button geklickt.");
   } finally {
     await driver.quit();
   }
