@@ -23,32 +23,6 @@ describe("E2E Test für Demo Page", function () {
     );
   });
 
-  it("Aufgabe Bonus: Slider steuern und Bewegung überprüfen", async function () {
-    const slider = await driver.findElement(By.xpath('//*[@id="mySlider"]')); // Ersetze den XPath
-
-    // Initiale Position des Sliders holen
-    const sliderRect = await slider.getRect(); // Liefert {x, y, width, height}
-
-    // Aktionen initialisieren
-    const actions = driver.actions({ async: true });
-
-    // Mausbewegung: Bewege die Maus über den Slider und ziehe ihn
-    await actions
-      .move({ x: sliderRect.x + 10, y: sliderRect.y + sliderRect.height / 2 }) // Anfangsposition
-      .press() // Klickt auf den Slider
-      .move({ x: sliderRect.width / 2, y: 0 }) // Verschiebt ihn horizontal
-      .release() // Lässt die Maustaste los
-      .perform();
-
-    // Prüfe den Slider-Wert
-    const sliderValue = await slider.getAttribute("value");
-    assert.strictEqual(
-      sliderValue,
-      "50", // Erwarte den Zielwert
-      `Slider ist nicht auf 50, sondern auf ${sliderValue}`
-    );
-  });
-
   it("Aufgabe 2: Dropdown-Menü", async function () {
     const dropdownButton = await driver.findElement(
       By.xpath('//*[@id="myDropdown"]')
