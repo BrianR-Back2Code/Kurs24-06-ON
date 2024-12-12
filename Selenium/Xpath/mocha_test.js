@@ -49,13 +49,13 @@ describe("E2E Test für Demo Page", function () {
 
   it("Aufgabe 3: Textfeld auswählen", async function () {
     const textField = await driver.findElement(
-      By.xpath('//*[@id="myTextInput"]')
+      By.xpath('//input[@id="myTextInput"]')
     ); // Ergänze den XPath
     const myText = "Automatisierter Text";
     await textField.sendKeys(myText);
-    const text = await textField.getText();
+    const text = await textField.getAttribute("value");
     console.log(text);
-    assert.strictEqual(myText, "Automatisierter Text", "Text stimmt nicht.");
+    assert.strictEqual(text, myText, "Text stimmt nicht.");
   });
 
   it("Aufgabe 4: Button klicken", async function () {
