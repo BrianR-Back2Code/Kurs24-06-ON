@@ -12,17 +12,28 @@ describe("Login Test", function () {
     await driver.quit();
   });
   it("1. Testfall: Erfolgreicher Login", async function () {
-    const myUsername = "demo_user";
-    const myPassword = "secret_pass";
+    await driver.get("https://seleniumbase.io/simple/signup");
+
+    const getUsername = await driver
+      .findElement(By.xpath("/html/body/div[1]/h5"))
+      .getText();
+    console.log(getUsername);
+    const getPassword = await driver
+      .findElement(By.xpath("/html/body/div[2]/h5"))
+      .getText();
+    console.log(getPassword);
+    await driver.navigate().back();
+
     await driver
       .findElement(By.xpath('//*[@id="username"]'))
-      .sendKeys(myUsername);
+      .sendKeys(getUsername);
     await driver
       .findElement(By.xpath('//*[@id="password"]'))
-      .sendKeys(myPassword);
+      .sendKeys(getPassword);
 
     const signin = await driver.findElement(By.xpath('//*[@id="log-in"]'));
     await signin.click();
+
     const welcome = await driver.findElement(By.xpath("/html/body/h1"));
     const checkText = await welcome.getText();
     assert.strictEqual(
