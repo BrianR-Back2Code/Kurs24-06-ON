@@ -1,0 +1,4 @@
+{"level":"info","message":"Server läuft auf http://localhost:3001","timestamp":"07-01-2025 15:07:33"}
+{"level":"info","message":{"author":"Ray Bradbury","id":4,"title":"Fahrenheit 451","year":1953},"timestamp":"07-01-2025 15:11:19"}
+{"level":"info","message":{"author":"Brian","id":5,"title":"Ich hab alles richtig gemacht","year":2025},"timestamp":"07-01-2025 15:11:50"}
+{"level":"info","message":{"author":"Brian","id":4,"title":"Ich hab alles richtig gemacht","year":2025},"timestamp":"07-01-2025 15:16:37"}
