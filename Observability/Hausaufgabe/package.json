@@ -1,0 +1,17 @@
+{
+  "name": "express-logs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "1. **Launch the Express Server**      Start your Express server on the local machine.      Verify it's running by accessing:      ```bash    curl http://localhost:5001/    ```",
+  "dependencies": {
+    "express": "^4.21.2",
+    "winston": "^3.17.0"
+  }
+}

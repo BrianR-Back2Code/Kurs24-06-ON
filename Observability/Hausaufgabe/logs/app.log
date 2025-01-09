@@ -1,0 +1,53 @@
+2025-01-09 06:09:31 [info]: Server läuft auf 5001
+2025-01-09 06:09:48 [info]: Wurzel Route aufgerufen
+2025-01-09 06:10:04 [info]: Hallo Welt Route aufgerufen
+2025-01-09 06:10:10 [info]: Bye Route aufgerufen
+2025-01-09 06:40:00 [info]: Wurzel Route aufgerufen
+2025-01-09 06:40:02 [info]: Wurzel Route aufgerufen
+2025-01-09 06:40:03 [info]: Wurzel Route aufgerufen
+2025-01-09 06:40:08 [info]: Hallo Welt Route aufgerufen
+2025-01-09 07:10:47 [info]: Hallo Welt Route aufgerufen
+2025-01-09 07:10:50 [info]: Wurzel Route aufgerufen
+2025-01-09 07:10:52 [info]: Hallo Welt Route aufgerufen
+2025-01-09 11:17:37 [info]: Server läuft auf 5001
+2025-01-09 11:18:03 [info]: Wurzel Route aufgerufen
+2025-01-09 11:30:52 [info]: Wurzel Route aufgerufen
+2025-01-09 11:31:04 [info]: Hallo Welt Route aufgerufen
+2025-01-09 11:31:10 [info]: Bye Route aufgerufen
+2025-01-09 11:33:45 [info]: Server läuft auf 5001
+2025-01-09 13:31:38 [info]: Server läuft auf 5001
+2025-01-09 13:31:40 [info]: Wurzel Route aufgerufen
+2025-01-09 13:31:51 [info]: Wurzel Route aufgerufen
+2025-01-09 13:31:59 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:33:49 [info]: Server läuft auf 5001
+2025-01-09 13:33:54 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:33:56 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:34:01 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:34:14 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:34:16 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:42:34 [info]: Server läuft auf 5001
+2025-01-09 13:42:55 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:42:56 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:43:01 [info]: Hallo Welt Route aufgerufen
+2025-01-09 13:43:57 [info]: Server läuft auf 5001
+2025-01-09 13:44:05 [info]: Fehler
+2025-01-09 13:44:52 [info]: Server läuft auf 5001
+2025-01-09 13:44:55 [info]: Fehler
+2025-01-09 13:44:57 [info]: Fehler
+2025-01-09 13:46:30 [info]: Server läuft auf 5001
+2025-01-09 13:46:42 [info]: Wurzel Route aufgerufen
+2025-01-09 13:46:49 [info]: Fehler
+2025-01-09 13:54:16 [info]: Fehler
+2025-01-09 13:54:17 [info]: Fehler
+2025-01-09 13:54:17 [info]: Fehler
+2025-01-09 13:54:18 [info]: Fehler
+2025-01-09 13:54:18 [info]: Fehler
+2025-01-09 13:54:19 [info]: Fehler
+2025-01-09 13:54:19 [info]: Fehler
+2025-01-09 13:57:34 [info]: Server läuft auf 5001
+2025-01-09 13:57:46 [info]: Hallo
+2025-01-09 13:57:46 [info]: Request: GET /Hallo - Status: 200
+2025-01-09 13:58:53 [info]: Server läuft auf 5001
+2025-01-09 13:59:05 [info]: Request: GET /Error - Status: 200
+2025-01-09 14:00:52 [info]: Server läuft auf 5001
+2025-01-09 14:00:58 [info]: Request: GET /Error - Status: 404
