@@ -17,7 +17,7 @@ app.get("/Hallo", (req, res) => {
 
 app.get("/Error", (req, res) => {
   res.status(404).send("Fehler");
-  logger.info(`Request: ${req.method} ${req.url} - Status: ${res.statusCode}`);
+  logger.error(`Request: ${req.method} ${req.url} - Status: ${res.statusCode}`);
 });
 
 app.listen(port, () => {

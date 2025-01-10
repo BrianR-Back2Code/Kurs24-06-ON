@@ -59,15 +59,17 @@ app.put("/books/:id", (req, res) => {
   logger.info(book);
 });
 
-// Ein Buch löschen
 app.delete("/books/:id", (req, res) => {
   const bookIndex = books.findIndex((b) => b.id === parseInt(req.params.id));
   if (bookIndex === -1) {
+    logger.error(
+      `Fehler beim Löschen: Buch mit ID ${req.params.id} nicht gefunden.`
+    );
     return res.status(404).json({ error: "Buch nicht gefunden." });
   }
-  books.splice(bookIndex, 1);
+  const deletedBook = books.splice(bookIndex, 1);
   res.status(204).send();
-  logger.info(bookIndex, "wurde gelöscht");
+  logger.info(`Buch gelöscht: ${deletedBook[0].title}`);
 });
 
 // Server starten

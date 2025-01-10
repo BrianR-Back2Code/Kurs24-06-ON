@@ -1,0 +1,12 @@
+{
+  "name": "10.01.25",
+  "version": "1.0.0",
+  "main": "log.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
