@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s # Wie oft Prometheus Daten abruft (Standard: 1m)
+  evaluation_interval: 15s # Wie oft Alerts ausgewertet werden
+
+scrape_configs:
+  - job_name: "express-logs"
+    static_configs:
+      - targets: ["172.22.26.123:3000"]
