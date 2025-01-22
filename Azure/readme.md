@@ -4,7 +4,7 @@
 Führe den folgenden Befehl aus, um die VM zu erstellen:
 ```powershell
 az vm create `
-    --resource-group "rg-24-06-on-rechlin-brian" `
+    --resource-group Deine Ressourcengruppe" `
     --name my-vm `
     --public-ip-sku Standard `
     --image Ubuntu2204 `
@@ -17,7 +17,7 @@ az vm create `
 Verwende eine Custom Script Extension, um NGINX auf der VM zu installieren:
 ```powershell
 az vm extension set `
-    --resource-group "rg-24-06-on-rechlin-brian" `
+    --resource-group Deine Ressourcengruppe" `
     --vm-name my-vm `
     --name customScript `
     --publisher Microsoft.Azure.Extensions `
@@ -30,7 +30,7 @@ az vm extension set `
 Speichere die öffentliche IP-Adresse der VM in einer Variablen und zeige sie an:
 ```powershell
 $IPADDRESS = (az vm list-ip-addresses `
-    --resource-group "rg-24-06-on-rechlin-brian" `
+    --resource-group Deine Ressourcengruppe" `
     --name my-vm `
     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" `
     --output tsv)
@@ -42,7 +42,7 @@ Write-Output $IPADDRESS
 Zeige die Network Security Groups in der Ressourcengruppe an:
 ```powershell
 az network nsg list `
-    --resource-group "rg-24-06-on-rechlin-brian" `
+    --resource-group Deine Ressourcengruppe" `
     --query '[].name' `
     --output tsv
 ```
@@ -51,7 +51,7 @@ az network nsg list `
 Liste die vorhandenen Regeln für die NSG der VM auf:
 ```powershell
 az network nsg rule list `
-    --resource-group "rg-24-06-on-rechlin-brian" `
+    --resource-group Deine Ressourcengruppe" `
     --nsg-name my-vmNSG `
     --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' `
     --output table
@@ -61,7 +61,7 @@ az network nsg rule list `
 Erstelle eine Regel, um HTTP-Traffic (Port 80) zuzulassen:
 ```powershell
 az network nsg rule create `
-    --resource-group "rg-24-06-on-rechlin-brian" `
+    --resource-group Deine Ressourcengruppe" `
     --nsg-name my-vmNSG `
     --name allow-http `
     --protocol tcp `
@@ -78,7 +78,7 @@ az network nsg rule create `
 Führe den folgenden Befehl aus, um die VM zu erstellen:
 ```bash
 az vm create \
-    --resource-group "rg-24-06-on-rechlin-brian" \
+    --resource-group Deine Ressourcengruppe" \
     --name my-vm \
     --public-ip-sku Standard \
     --image Ubuntu2204 \
@@ -91,7 +91,7 @@ az vm create \
 Installiere NGINX mit einer Custom Script Extension:
 ```bash
 az vm extension set \
-    --resource-group "rg-24-06-on-rechlin-brian" \
+    --resource-group Deine Ressourcengruppe" \
     --vm-name my-vm \
     --name customScript \
     --publisher Microsoft.Azure.Extensions \
@@ -104,7 +104,7 @@ az vm extension set \
 Speichere die öffentliche IP-Adresse in einer Variablen und gib sie aus:
 ```bash
 IPADDRESS=$(az vm list-ip-addresses \
-    --resource-group "rg-24-06-on-rechlin-brian" \
+    --resource-group Deine Ressourcengruppe" \
     --name my-vm \
     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
     --output tsv)
@@ -116,7 +116,7 @@ echo $IPADDRESS
 Liste die Network Security Groups in der Ressourcengruppe auf:
 ```bash
 az network nsg list \
-    --resource-group "rg-24-06-on-rechlin-brian" \
+    --resource-group Deine Ressourcengruppe" \
     --query '[].name' \
     --output tsv
 ```
@@ -125,7 +125,7 @@ az network nsg list \
 Zeige die Regeln der NSG an:
 ```bash
 az network nsg rule list \
-    --resource-group "rg-24-06-on-rechlin-brian" \
+    --resource-group Deine Ressourcengruppe" \
     --nsg-name my-vmNSG \
     --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
     --output table
@@ -135,7 +135,7 @@ az network nsg rule list \
 Füge eine Regel hinzu, um HTTP-Traffic (Port 80) zuzulassen:
 ```bash
 az network nsg rule create \
-    --resource-group "rg-24-06-on-rechlin-brian" \
+    --resource-group Deine Ressourcengruppe" \
     --nsg-name my-vmNSG \
     --name allow-http \
     --protocol tcp \
