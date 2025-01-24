@@ -1,0 +1,16 @@
+{
+  "name": "azurequeue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@azure/storage-queue": "^12.25.0",
+    "dotenv": "^16.4.7"
+  }
+}
