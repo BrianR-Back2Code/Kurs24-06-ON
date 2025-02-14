@@ -1,0 +1,32 @@
+[
+  {
+    "PartitionKey": "Kunde1",
+    "RowKey": "1",
+    "Name": "Dimi",
+    "Alter": 30
+  },
+  {
+    "PartitionKey": "Kunde2",
+    "RowKey": "2",
+    "Name": "Sarah",
+    "Alter": 25
+  },
+  {
+    "PartitionKey": "Kunde3",
+    "RowKey": "3",
+    "Name": "John",
+    "Alter": 40
+  },
+  {
+    "PartitionKey": "Kunde4",
+    "RowKey": "4",
+    "Name": "Anna",
+    "Alter": 28
+  },
+  {
+    "PartitionKey": "Kunde5",
+    "RowKey": "5",
+    "Name": "Max",
+    "Alter": 35
+  }
+]

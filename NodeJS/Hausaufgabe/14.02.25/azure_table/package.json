@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@azure/data-tables": "^13.3.0",
+    "inquirer": "^12.4.1"
+  },
+  "name": "azure_table",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
