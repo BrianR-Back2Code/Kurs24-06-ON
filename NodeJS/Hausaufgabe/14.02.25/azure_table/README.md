@@ -20,4 +20,4 @@
   - Entitäten abruft, die im Table gespeichert sind,
   - und diese wieder löscht.
 
-- Sollten Probleme auftreten, melde dich bitte einfach bei uns auf Slack.
+- Sollten Probleme auftreten, melde dich bitte einfach bei mir auf Slack.
