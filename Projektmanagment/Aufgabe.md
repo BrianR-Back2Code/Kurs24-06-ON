@@ -165,7 +165,3 @@ Unsere Plattform richtet sich an:
 🔹 **S3 & CloudFront = Schnelle Bereitstellung & globaler Zugriff**\
 🔹 **Sicherheit durch AWS WAF, Cognito & IAM**
 
-👉 Diese Architektur bietet eine robuste, skalierbare und sichere Grundlage für unsere Event-Planungsplattform! 🚀
-
-
-
