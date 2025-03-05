@@ -32,7 +32,6 @@ Ursprünglich als Methode zur Verbesserung der Zusammenarbeit zwischen Entwicklu
 **Neue Strömungen und Entwicklungen:**
 
 - **DevSecOps:** Integration von Sicherheitspraktiken in den DevOps-Ansatz, um Sicherheitsaspekte frühzeitig im Entwicklungsprozess zu berücksichtigen.
-- 
 - **Platform Engineering:** Fokussiert auf den Aufbau und die Wartung interner Plattformen, die Entwicklungsteams standardisierte Umgebungen und Tools bieten, um die Effizienz zu steigern. 
 
 **Visuelle Zeitleiste der wichtigsten Meilensteine:**
