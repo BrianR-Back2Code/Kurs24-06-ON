@@ -7,8 +7,8 @@
 2. **Konkrete Schritte der Transformation:**
    - **Einführung von "2-Pizza-Teams":** Amazon implementierte kleine, autonome Teams, die so klein sind, dass sie mit zwei Pizzen satt werden können. Diese Teams sind für spezifische Services verantwortlich und fördern die Eigenverantwortung und Agilität.
    - **Kontinuierliche Bereitstellung:** Durch die Implementierung von Continuous Integration und Continuous Delivery (CI/CD) konnte Amazon Codeänderungen schneller und zuverlässiger in die Produktion überführen.
-   - **Verwendung von DevOps-Tools:** Amazon entwickelte und nutzte Tools wie AWS Developer Tools, die es Teams ermöglichen, Infrastruktur als Code zu verwalten und Automatisierung zu fördern. citeturn0search0
-
+   - **Verwendung von DevOps-Tools:** Amazon entwickelte und nutzte Tools wie AWS Developer Tools, die es Teams ermöglichen, Infrastruktur als Code zu verwalten und Automatisierung zu fördern.
+     
 3. **Messbare Erfolge:**
    - **Schnellere Deployments:** Durch die Einführung von CI/CD konnte Amazon die Häufigkeit von Deployments erhöhen und schneller auf Marktanforderungen reagieren.
    - **Weniger Ausfälle:** Die Automatisierung von Tests und Deployments reduzierte menschliche Fehler und führte zu einer stabileren Produktionsumgebung.
@@ -30,7 +30,7 @@
 
 2. **Konkrete Schritte der Transformation:**
    - **Anwendung von Continuous Delivery und DevOps-Praktiken:** Siemens implementierte Continuous Delivery und DevOps-Praktiken, um die Softwarebereitstellung zu beschleunigen und die Zusammenarbeit zwischen Teams zu verbessern. citeturn0search1
-   - **Digitalisierung und Automatisierung:** Durch den Einsatz von Technologien wie Cloud Computing und IoT wurden Prozesse automatisiert und die Flexibilität erhöht. citeturn0search3
+   - **Digitalisierung und Automatisierung:** Durch den Einsatz von Technologien wie Cloud Computing und IoT wurden Prozesse automatisiert und die Flexibilität erhöht. 
 
 3. **Messbare Erfolge:**
    - **Beschleunigte Entwicklungszyklen:** Die Implementierung von DevOps-Praktiken führte zu schnelleren Entwicklungs- und Bereitstellungszyklen.
